@@ -106,8 +106,11 @@ background-size: cover;
   font-size: 15px;
   color: #322A3C;
   padding: 20px;
-  width: 50%;
+  width: 30%;
+  height: 200%;
+  overflow: hidden;
 }
+
 
 
   
@@ -140,16 +143,17 @@ background-size: cover;
 
   .hometext2 {
       position: absolute;
-      top: 640px;
+      top: 90%;
       right: 12.5%;
-      width: 60%;
-    height: 450px;
+      width: 40%;
+    height: 380px;
     padding-right: 0px;
     padding-left: 10px;
     margin-right: 0px;
       border: 3px solid #73AD21;
     font-family: 'blockgame';
     font-size: 20px;
+    overflow: hidden;
     }
 
   .grievancesheader {
@@ -161,6 +165,7 @@ background-size: cover;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
     text-align: center;
+    object-position: center;
   }
 
   .moviesheader {
