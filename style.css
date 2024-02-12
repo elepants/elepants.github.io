@@ -1,0 +1,161 @@
+html,
+
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url('background.png');
+  background-position: top;
+background-size: cover;
+
+  @font-face {
+    font-family: decoderfont;
+    src: url(decoder.ttf);
+  }
+
+  @font-face {
+    font-family: bitfont;
+    src: url(addsbp.ttf);
+  }
+
+  @font-face {
+ font-family: 'blockgame';
+    src: url(thirdminecraftia.ttf);
+  }
+  
+  ul {
+    list-style-type: none;
+    font-family: bitfont;
+    margin: 0;  
+    padding: 0;
+    overflow: hidden;
+    border-radius: 5px; 
+    
+  }
+
+  li a {
+    float: left;
+    display: block;
+    color: #393143;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+  }
+
+  li a:hover {
+    background-color: #FDF0ED;
+    color: #393143;
+  }
+
+
+  
+.marquis {
+  font-family: 'blockgame';
+  font-size: 50px;
+  background-position: center;
+  max-width: 75%;
+  margin-left: 12.5%;
+  border-radius: 25px;
+  color: #E06965;
+  text-align: center;
+  text-shadow: 2px 2px #012622;
+  background-image: url('cloudbanner.gif');
+ 
+}
+  
+  .homeleft-container {
+    font-family: 'blockgame';
+    font-size: 18px;
+    color: #322a3c;
+    position: absolute;
+    left: 0px;
+    padding: 20px;
+    width: 50%;
+    }
+
+  .catgifright-container {
+    position: absolute;
+  right: 0px;
+    padding: 35px;
+  }
+
+  .musiccolumn {
+    display: flex;
+  }
+  
+  .musicleft {
+    margin-top: 50px;
+    padding-top: 5px;
+    position: absolute;
+    left: 12.5%;
+    padding-left: 25px;
+    font-family: 'blockgame';
+    font-size: 15px;
+    color: #322A3C;
+    padding-right: 20px;
+    width: 50%;
+  }
+  
+.musicright {
+  margin-top: 50px;
+  padding-top: 5px;
+  position: absolute;
+  right: 0px;
+  font-family: 'blockgame';
+  font-size: 15px;
+  color: #322A3C;
+  padding: 20px;
+  width: 50%;
+}
+
+
+  
+  .abouttext {
+    font-family: 'blockgame';
+    font-size: 13px;
+    color: #ebe0e0;
+    left: 0px;
+    padding: 20px;
+    width: 50%;
+  }
+
+  .flower1 {
+    position: absolute;
+    top: 300px;
+    right: 20px;
+  }
+
+  .dreams1 {
+    
+    font-family: 'blockgame';
+    font-size: 20px;
+    color: #ebe0e0;
+    position: relative;
+    left: 12.5%;
+    padding-top: 30px;
+    padding-left: 5px;
+    width: 50%;
+  }
+
+  .hometext2 {
+      position: absolute;
+      top: 640px;
+      right: 12.5%;
+      width: 60%;
+    height: 450px;
+    padding-right: 0px;
+    padding-left: 10px;
+    margin-right: 0px;
+      border: 3px solid #73AD21;
+    font-family: 'blockgame';
+    font-size: 20px;
+    }
+
+  .grievancesheader {
+    font-family: 'bitfont';
+    text-align: center;
+  }
+  }
+
+
