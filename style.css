@@ -162,6 +162,13 @@ background-size: cover;
     font-size: 20px;
     text-align: center;
   }
+
+  .moviesheader {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-align: center;
+    text-color: #322A3C;
+  }
   }
 
 
