@@ -153,7 +153,13 @@ background-size: cover;
     }
 
   .grievancesheader {
-    font-family: 'bitfont';
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+  }
+
+  .grievancestext {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
     text-align: center;
   }
   }
