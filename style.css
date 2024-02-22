@@ -105,10 +105,12 @@ background-size: cover;
   max-width: 75%;
   margin-left: 12.5%;
   border-radius: 25px;
-  color: #E06965;
+  color: #ED7A5A;
   text-align: center;
   text-shadow: 2px 2px #012622;
-  background-image: url('cloudbanner.gif');
+  outline: 3px 3px #012622;
+  background-image: url('banner4.gif');
+  background-size: cover;
  
 }
   .marquis2 {
@@ -124,20 +126,44 @@ background-size: cover;
     background-image: url('cloudbanner.gif');
   }
   
-  .homeleft-container {
+  .homecontent1 {
+    line-height: 35px;
     font-family: 'blockgame';
-    font-size: 18px;
+    top: 30px;
+    font-size: 16px;
+    text-align: left;
     color: #420C14;
-    position: absolute;
+    position: relative;
+    display: block;
+    overflow: hidden;
     left: 0px;
     padding: 20px;
-    width: 50%;
+    width: 100%;
     }
+  .cat1 {
+    position: relative;
+    margin: auto;
+    float: right;
+  }
 
-  .catgifright-container {
+  .hometext2 {
+    font-family: 'blockgame';
+    top: 100%;
     position: absolute;
-  right: 0px;
-    padding: 35px;
+    display: block;
+    text-align: right;
+    overflow: hidden;
+    font-size: 20px;
+  }
+  .oysterpic {
+    position: relative;
+    margin: auto;
+    float: left;
+  }
+  .hometext3 {
+    position: absolute;
+    top: 200%;
+    display: block;
   }
 
   .musiccolumn {
@@ -145,20 +171,34 @@ background-size: cover;
   }
   
   .musicleft {
+    display: block;
     margin-top: 50px;
     padding-top: 5px;
-    position: absolute;
+    position: relative;
     left: 12.5%;
     padding-left: 25px;
-    font-family: 'blockgame';
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 15px;
     color: #322A3C;
+    padding-right: 20px;
+    width: 50%;
+    line-height: 25px;
+  }
+  .trackslist {
+    display: block;
+    padding-top: 5px;
+    position: absolute;
+    top: 90%;
+    padding-left: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    color: #420C14;
     padding-right: 20px;
     width: 50%;
   }
   
 .musicright {
-  margin-top: 50px;
+  margin-top: 100px;
   padding-top: 5px;
   position: absolute;
   right: 0px;
@@ -170,8 +210,17 @@ background-size: cover;
   height: 200%;
   overflow: hidden;
 }
-
-
+.musicright-text {
+  position: relative;
+  text-align: center;
+}
+.jummbus {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+}
 
   
   .abouttext1 {
@@ -191,7 +240,7 @@ background-size: cover;
 
   .dreams1 {
     
-    font-family: 'blockgame';
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
     color: #ebe0e0;
     position: relative;
@@ -200,21 +249,6 @@ background-size: cover;
     padding-left: 5px;
     width: 50%;
   }
-
-  .hometext2 {
-      position: absolute;
-      top: 90%;
-      right: 12.5%;
-      width: 40%;
-    height: 380px;
-    padding-right: 0px;
-    padding-left: 10px;
-    margin-right: 0px;
-      border: 3px solid #73AD21;
-    font-family: 'blockgame';
-    font-size: 20px;
-    overflow: hidden;
-    }
 
   .grievancesheader {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
