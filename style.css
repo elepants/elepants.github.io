@@ -170,50 +170,47 @@ background-size: cover;
     display: flex;
   }
   
-  .musicleft {
+  .musictop {
     display: block;
-    margin-top: 50px;
+    margin-top: 20px;
     padding-top: 5px;
     position: relative;
-    left: 12.5%;
-    padding-left: 25px;
+    padding-left: 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 15px;
     color: #322A3C;
-    padding-right: 20px;
-    width: 50%;
+    padding-right: 5px;
     line-height: 25px;
   }
+  
   .trackslist {
     display: block;
     padding-top: 5px;
     position: absolute;
-    top: 90%;
     padding-left: 5px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'blockgame';
     font-size: 15px;
     color: #420C14;
     padding-right: 20px;
     width: 50%;
   }
   
-.musicright {
-  margin-top: 100px;
+.musicheader {
   padding-top: 5px;
-  position: absolute;
-  right: 0px;
-  font-family: 'blockgame';
-  font-size: 15px;
-  color: #322A3C;
-  padding: 20px;
-  width: 30%;
+  position: relative;
+  text-align: middle;
+  font-family: 'bitfont';
+  font-size: 20px;
+  color: #420C14;
+  padding: 5px;
   height: 200%;
   overflow: hidden;
 }
-.musicright-text {
-  position: relative;
-  text-align: center;
-}
+  .musicintro {
+    font-size: 15px;
+  }
+
+
 .jummbus {
   display: block;
   position: relative;
@@ -242,7 +239,7 @@ background-size: cover;
     
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
-    color: #ebe0e0;
+    color: #420C14;
     position: relative;
     left: 12.5%;
     padding-top: 30px;
@@ -266,12 +263,13 @@ background-size: cover;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
     text-align: center;
-    text-color: #420C14;
+    color: #420C14;
   }
 
   .moviestext {
     font-family: 'bitfont';
     vertical-align: top;
+    line-height: 25px;
   }
   }
 
