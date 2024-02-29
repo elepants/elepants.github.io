@@ -146,7 +146,7 @@ background-size: cover;
     color: #E06965;
     text-align: center;
     text-shadow: 4px 4px #012622;
-    background-image: url('cloudbanner.gif');
+    background-image: url('swampgif.gif');
   }
   
   .homecontent1 {
@@ -222,15 +222,14 @@ background-size: cover;
   padding-top: 5px;
   position: relative;
   text-align: middle;
-  font-family: 'bitfont';
-  font-size: 20px;
+  font-size: 42px;
   color: #420C14;
-  padding: 5px;
   height: 200%;
-  overflow: hidden;
+  overflow: shown;
 }
   .musicintro {
-    font-size: 15px;
+    font-size: 18px;
+    line-height: 30px;
   }
 
 
@@ -258,25 +257,44 @@ background-size: cover;
     right: 20px;
   }
 
-  .dreams1 {
-    
+  .dreamstop {
+    display: block;
     font-family: 'bitfont';
     font-size: 20px;
     line-height: 35px;
     color: #420C14;
     position: relative;
     left: 12.5%;
-    padding-top: 30px;
-    padding-left: 20px;
-    width: 50%;
-  }
-  .dreamintro {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18px;
-    line-height: 30px;
+    padding-left: 15px;
+    top: 30px;
+    width: 75%;
+    overflow: hidden;
   }
 
-.dream1metrobabytext,  .dream2hostagetext, .dream3blindlunchtext, .dream4cranetext, .dream6maxwelltext, .dream7eyestext, .dream8godtext, .dream9riverslidetext, .dream10beartext {
+    .dreamsbot {
+      position: absolute;
+      top: 50%;
+      display: inline-block; 
+
+      overflow: none;
+      font-family: 'bitfont';
+      font-size: 20px;
+      line-height: 35px;
+      color: #420C14;
+      padding-top: 30px;
+      width: 75%;
+      left: 12.5%;
+      padding-left: 22px;
+  }
+
+  .dreamintro {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    line-height: 30px;
+    overflow: hidden;
+  }
+  
+.dream1metrobabytext,  .dream2hostagetext, .dream3blindlunchtext, .dream4cranetext, .dream7eyestext, .dream8godtext, .dream9riverslidetext, .dream10beartext {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
     color: #420C14;
@@ -287,6 +305,19 @@ background-size: cover;
     width: 75%;
   }
 
+  .dream6maxwelltext {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: #420C14;
+    position: relative;
+    left: 12.5%;
+    max-height: 300%;
+    padding-top: 30px;
+    padding-left: 20px;
+    width: 75%;
+    overflow: auto;
+    margin-bottom: 50px;
+  }
 
   .grievancesheader {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
