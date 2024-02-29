@@ -96,6 +96,29 @@ background-size: cover;
     display: block;
   }
 
+  a:link {
+    color: #420C14;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #420C14;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #D6EFFF;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: #420C14;
+    background-color: transparent;
+    text-decoration: underline;
+  }
 
   
 .marquis {
@@ -237,8 +260,9 @@ background-size: cover;
 
   .dreams1 {
     
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'bitfont';
     font-size: 20px;
+    line-height: 35px;
     color: #420C14;
     position: relative;
     left: 12.5%;
@@ -246,8 +270,13 @@ background-size: cover;
     padding-left: 20px;
     width: 50%;
   }
+  .dreamintro {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 30px;
+  }
 
-  .dream1metrobabytext,  .dream2hostagetext, .dream3blindlunchtext, .dream4cranetext {
+.dream1metrobabytext,  .dream2hostagetext, .dream3blindlunchtext, .dream4cranetext, .dream6maxwelltext, .dream7eyestext, .dream8godtext, .dream9riverslidetext, .dream10beartext {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
     color: #420C14;
