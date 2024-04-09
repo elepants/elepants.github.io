@@ -1,6 +1,7 @@
 html,
 
 body {
+  color: #420C14;
   height: 100%;
   width: 100%;
   background-image: url('body.jpg');
@@ -22,7 +23,6 @@ body {
     src: url(thirdminecraftia.ttf);
   }
 
-  
   /*NAVBAR */
   ul {
     display: flex;
