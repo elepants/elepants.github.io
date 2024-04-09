@@ -1,0 +1,87 @@
+html,
+
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url('body.jpg');
+  background-position: top;
+  background-size: cover;
+
+  @font-face {
+    font-family: decoderfont;
+    src: url(decoder.ttf);
+  }
+
+  @font-face {
+    font-family: bitfont;
+    src: url(addsbp.ttf);
+  }
+
+  @font-face {
+ font-family: 'blockgame';
+    src: url(thirdminecraftia.ttf);
+  }
+
+
+  /*NAVBAR */
+  ul {
+    display: flex;
+    list-style-type: none;
+    color: #420C14;
+    margin: 0;  
+    padding: 0;
+    border-radius: 5px; 
+    justify-content: center;
+
+  }
+
+  ul li {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+  }
+
+  li a {
+   display: block;
+    color: #420C14;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+  }
+  li a:hover {
+    background-color: #FDF0ED;
+    color: #420C14;
+  }
+/*END NAVBAR*/
+
+  .aboutgrid-container {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 200px 150px 200px 500px;
+    grid-template-areas:
+          "content1 content2"
+          "content3 content2"
+          "content4 content4"
+          "content5 content5"
+          "footer  footer";
+  }
+
+  .mepic {
+    overflow: hidden;
+    font-family: 'blockgame';
+      grid-area: content2;
+      font-size: 13px;
+      color: #ebe0e0;
+      padding: 20px;
+  }
+  .abouttext1 {
+    font-family: 'blockgame';
+    grid-area: content1;
+    font-size: 13px;
+    color: #ebe0e0;
+    padding: 20px;
+  }

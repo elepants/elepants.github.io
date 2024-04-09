@@ -1,0 +1,136 @@
+html,
+
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url('body.jpg');
+  background-position: top;
+  background-size: cover;
+
+  @font-face {
+    font-family: decoderfont;
+    src: url(decoder.ttf);
+  }
+
+  @font-face {
+    font-family: bitfont;
+    src: url(addsbp.ttf);
+  }
+
+  @font-face {
+ font-family: 'blockgame';
+    src: url(thirdminecraftia.ttf);
+  }
+
+
+  /*NAVBAR */
+  ul {
+    display: flex;
+    list-style-type: none;
+    color: #420C14;
+    margin: 0;  
+    padding: 0;
+    border-radius: 5px; 
+    justify-content: center;
+
+  }
+
+  ul li {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+  }
+
+  li a {
+   display: block;
+    color: #420C14;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+  }
+  li a:hover {
+    background-color: #FDF0ED;
+    color: #420C14;
+  }
+/*END NAVBAR*/
+
+  /*DREAMS*/
+  .dreamsgrid-container {
+  background-image: url('dreamsback.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+    background-position: center bottom;
+  border-radius: 25px 25px 25px 25px;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    padding: 25px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 120px 300px 120px 300px;
+    grid-template-areas:
+      "header header"
+      "intro intro"
+    "dreamlist  dreamlist2"
+    "dreamlist dreampic"
+    "footer footer";
+  }
+
+  .dreamsheader {
+    grid-area: header;
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+        line-height: 35px;
+        color: #F7A482;
+    text-shadow: 2px 0 #420C14, -2px 0 #420C14, 0 2px #420C14, 0 -2px #420C14,
+     1px 1px #420C14, -1px -1px #420C14, 1px -1px #420C14, -1px 1px #420C14;
+    }
+
+  .dreamblurb {
+    grid-area: intro;
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+        line-height: 35px;
+        color: #F7A482;
+    text-shadow: 2px 0 #420C14, -2px 0 #420C14, 0 2px #420C14, 0 -2px #420C14,
+     1px 1px #420C14, -1px -1px #420C14, 1px -1px #420C14, -1px 1px #420C14;
+    }
+
+.dreamspic1 {
+  grid-area: dreampic;
+  position: relative;
+}
+
+.dreamslist {
+  grid-area: dreamlist;
+  position: relative;
+  font-family: 'bitfont';
+      font-size: 20px;
+      line-height: 35px;
+  letter-spacing: 2.5px;
+  text-align: center;
+  color: #F7A482;
+  text-shadow: 2px 0 #420C14, -2px 0 #420C14, 0 2px #420C14, 0 -2px #420C14,
+   1px 1px #420C14, -1px -1px #420C14, 1px -1px #420C14, -1px 1px #420C14;
+}
+  .dreamslist2 {
+    grid-area: dreamlist2;
+    position: relative;
+    font-family: 'bitfont';
+        font-size: 20px;
+        line-height: 35px;
+    letter-spacing: 2.5px;
+    text-align: center;
+    color: #F7A482;
+    text-shadow: 2px 0 #420C14, -2px 0 #420C14, 0 2px #420C14, 0 -2px #420C14,
+     1px 1px #420C14, -1px -1px #420C14, 1px -1px #420C14, -1px 1px #420C14;
+  }
+
+  .dreamfooter {
+    grid-area: footer;
+    position: relative;
+    text-align: center;
+  }

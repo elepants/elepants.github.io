@@ -1,0 +1,283 @@
+html,
+
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url('body.jpg');
+  background-position: top;
+  background-size: cover;
+
+  @font-face {
+    font-family: decoderfont;
+    src: url(decoder.ttf);
+  }
+
+  @font-face {
+    font-family: bitfont;
+    src: url(addsbp.ttf);
+  }
+
+  @font-face {
+ font-family: 'blockgame';
+    src: url(thirdminecraftia.ttf);
+  }
+
+  
+  /*NAVBAR */
+  ul {
+    display: flex;
+    list-style-type: none;
+    color: #420C14;
+    margin: 0;  
+    padding: 0;
+    border-radius: 5px; 
+    justify-content: center;
+
+  }
+
+  ul li {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+  }
+
+  li a {
+   display: block;
+    color: #420C14;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+  }
+  li a:hover {
+    background-color: #FDF0ED;
+    color: #420C14;
+  }
+/*END NAVBAR*/
+
+/*HYPERLINKS*/
+  a:link {
+    color: #420C14;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #420C14;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #D6EFFF;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: #420C14;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+/*END HYPERLINKS*/
+
+/*MARQUIS*/
+.marquis1 {
+  grid-area: marquis;
+  font-family: 'blockgame';
+  font-size: 50px;
+  background-position: center;
+  border-radius: 25px 25px 25px 25px;
+  color: #ED7A5A;
+  text-align: center;
+  text-shadow: 2px 2px #012622;
+  outline: 3px 3px #012622;
+}
+  .marquis2 {
+    grid-area: marquis;
+    font-family: 'blockgame';
+    font-size: 50px;
+    background-position: center;
+    border-radius: 25px 25px 25px 25px;
+    color: #ED7A5A;
+    text-align: center;
+    text-shadow: 2px 2px #012622;
+    outline: 3px 3px #012622;
+  }
+  /*END MARQUIS*/
+
+  
+  /*HOME*/
+  .homegrid-container {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    overflow: auto;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 250px 65px 200px 500px;
+    grid-template-areas:
+        "header  header  header"
+        "content1 content1 content2"
+        "content3 content3 content3"
+        "content4 content4 content4"
+        "footer  footer  footer"
+        "footer footer footer";
+  }
+  .homeheader {
+    display: grid;
+    grid-area: header;
+    text-align: center;
+  }
+  .homecontent1 {
+    display: grid;
+    grid-area: content1;
+    padding-top: auto;
+    padding-bottom: auto;
+    overflow: hidden;
+  }
+  .homegif1 {
+    display: grid;
+    grid-area: content2;
+    overflow: hidden;
+  }
+  .homecontent3 {
+    display: grid;
+    grid-area: content3;
+    overflow: hidden;
+  }
+  .homecontent4 {
+    display: grid;
+    grid-area: content4;
+    overflow: hidden;
+  }
+
+  /*GRIEVANCES*/
+  .grievancesheader {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+  }
+
+  .grievancestext {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-align: center;
+    object-position: center;
+  }
+
+   /*END HOME*/
+  
+
+
+  
+  
+  
+
+  .dreamstop {
+    display: block;
+    font-family: 'bitfont';
+    font-size: 20px;
+    line-height: 35px;
+    color: #420C14;
+    position: relative;
+   
+  }
+
+ 
+    
+
+
+  
+.dream1metrobabytext,  .dream2hostagetext, .dream3blindlunchtext, .dream4cranetext, .dream7eyestext, .dream8godtext, .dream9riverslidetext, .dream10beartext, .dream11meteor3text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: #420C14;
+    position: relative;
+    left: 12.5%;
+    padding-top: 30px;
+    padding-left: 20px;
+    width: 75%;
+  }
+
+  .dream6maxwelltext {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: #420C14;
+    position: relative;
+    left: 12.5%;
+    max-height: 300%;
+    padding-top: 30px;
+    padding-left: 20px;
+    width: 75%;
+    overflow: auto;
+    margin-bottom: 50px;
+  }
+
+ 
+  
+  .moviegrid-container {
+  background-image: url('moveart.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+   
+    padding: 25px;
+    border-radius: 25px 25px 25px 25px;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 210px 430px 170px 180px 500px;
+    grid-template-areas:
+    "header header"
+    "filmslove lovelist"
+    "filmsenjoy lovelist"
+    "filmart hatelist"
+    "terriblefilm hatelist"
+    "footer footer";
+  }
+  
+  .moviesheader {
+    grid-area: header;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18.5px;
+    text-align: center;
+    color: #420C14;
+  }
+
+  .filmslove {
+    grid-area: filmslove;
+    font-family: 'bitfont';
+    vertical-align: top;
+    line-height: 25px;
+  }
+  .filmsenjoy {
+    grid-area: filmsenjoy;
+  }
+  .lovelist {
+    grid-area: lovelist;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .hatelist {
+    grid-area: hatelist;
+  }
+  .filmart {
+    grid-area: filmart;
+  }
+  .terriblefilm {
+    grid-area: terriblefilm;
+  }
+  .moviesfooter {
+    grid-area: footer;
+  }
+  .thumbdown {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-align: center;
+    object-position: center;
+  }
+ 
+  }
+
+
