@@ -22,7 +22,39 @@ body {
     src: url(thirdminecraftia.ttf);
   }
 
-
+  /*MOBILE FORMATTING*/
+  @media screen and (max-width: 768px) {
+    .body {
+      background-image: url('mobilebody.jpg');
+      background-repeat: no-repeat; 
+        -webkit-background-size: cover;
+      -webkit-background-repeat: no-repeat;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+    .musicgrid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 9fr;
+        grid-template-rows: 100px 150px 600px 600px 700px 600px 500px 500px 500px;
+        grid-template-areas:
+            "header"
+            "intro"
+            "musiclist"
+            "musiclist"
+            "musiclist2"
+            "musiclist2"
+            "musiclist3"
+            "musiclist3"
+            "footer";
+    }
+      .musicheader, .musicintro, .musiclist, .musiclist2, .musiclist3 {
+        grid-column: auto;
+        grid-row: auto;
+      }
+  }
+  }
+/*MOBILE FORMATTING*/
   /*NAVBAR */
   ul {
     display: flex;
@@ -137,7 +169,8 @@ body {
     font-size: 15px;
     text-align: center;
     color: #420C14;
-    
+  }
+
   .musiclist2 {
   grid-area: musiclist2;
     padding-top: 5px;
@@ -159,13 +192,6 @@ body {
     text-align: center;
     color: #420C14;
   }
-
-  .musicintro {
-    grid-area: intro;
-    font-size: 18px;
-    line-height: 30px;
-  }
-
 
 .tryjummbus {
 grid-area: tryjummbus;

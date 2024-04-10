@@ -81,6 +81,46 @@ body {
   }
 /*END HYPERLINKS*/
 
+  @media screen and (max-width: 768px) {
+    .body {
+      overflow: scroll;
+      background-image: url('mobilebody.jpg');
+      background-repeat: no-repeat; 
+      -webkit-background-size: cover;
+      -webkit-background-repeat: no-repeat;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      }
+    
+    .catlook {
+      object-fit: scale-down;
+    }
+    .oyster {
+      object-fit: scale-down;
+    }
+    .homegrid-container {
+     display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 7fr;
+        grid-template-rows: 100px 200px 200px 100px 700px 600px 500px;
+        grid-template-areas:
+            "header"
+            "intro"
+            "content1"
+            "content2"
+            "content3"
+            "content4"
+            "footer";
+    }
+      .homeheader, .homecontent1, .homegif1, .catlook, .homecontent3, .homecontent4, .homecontent5, .oyster {
+        grid-column: auto;
+        grid-row: auto;
+      }
+  
+  }
+  }
+  
 /*MARQUIS*/
 .marquis1 {
   grid-area: marquis;
@@ -119,8 +159,8 @@ body {
     grid-template-areas:
         "header  header  header"
         "content1 content1 content2"
-        "content3 content3 content3"
-        "content4 content4 content4"
+        "content3 content3 content2"
+        "content4 content4 content5"
         "footer  footer  footer"
         "footer footer footer";
   }
@@ -137,10 +177,22 @@ body {
     overflow: hidden;
   }
   .homegif1 {
-    display: grid;
     grid-area: content2;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+.catlook {
+  display: flex;
+  grid-area: content2;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  width: auto;
+  border-radius: 10px;
+}
+ 
   .homecontent3 {
     display: grid;
     grid-area: content3;
@@ -151,6 +203,16 @@ body {
     grid-area: content4;
     overflow: hidden;
   }
+.homecontent5 {
+  display: flex;
+  grid-area: content5;
+  align-items: center;
+  justify-content: center;
+}
+.oyster {
+  height: 90%;
+  width: auto;
+}
 
   /*GRIEVANCES*/
   .grievancesheader {
