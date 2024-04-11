@@ -80,10 +80,10 @@ body {
     text-decoration: underline;
   }
 /*END HYPERLINKS*/
+/*MOBILE FORMATTING*/
 
   @media screen and (max-width: 768px) {
     .body {
-      overflow: scroll;
       background-image: url('mobilebody.jpg');
       background-repeat: no-repeat; 
       -webkit-background-size: cover;
@@ -93,17 +93,14 @@ body {
       background-size: cover;
       }
     
-    .catlook {
-      object-fit: scale-down;
-    }
-    .oyster {
+  
+    .oyster, .catlook {
       object-fit: scale-down;
     }
     .homegrid-container {
      display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 7fr;
-        grid-template-rows: 100px 200px 200px 100px 700px 600px 500px;
+        grid-template-rows: 60px 350px 200px 175px 350px 200px 10px;
         grid-template-areas:
             "header"
             "intro"
@@ -116,11 +113,20 @@ body {
       .homeheader, .homecontent1, .homegif1, .catlook, .homecontent3, .homecontent4, .homecontent5, .oyster {
         grid-column: auto;
         grid-row: auto;
+        display: flex;
+        overflow: hidden;
       }
+        
+        .homeheader {
+          text-align: center;
+          justify-content: center;
+        }
+      }
+    
   
   }
-  }
-  
+}
+  /*END MOBILE FORMATTING*/
 /*MARQUIS*/
 .marquis1 {
   grid-area: marquis;
@@ -155,12 +161,12 @@ body {
     display: grid;
     grid-gap: 5px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 80px 250px 65px 200px 500px;
+    grid-template-rows: 80px 250px 150px 350px 500px;
     grid-template-areas:
         "header  header  header"
-        "content1 content1 content2"
-        "content3 content3 content2"
-        "content4 content4 content5"
+        "content content content2"
+        "content content content2"
+        "content content content5"
         "footer  footer  footer"
         "footer footer footer";
   }
@@ -205,12 +211,12 @@ body {
   }
 .homecontent5 {
   display: flex;
-  grid-area: content5;
+  grid-area: footer;
   align-items: center;
   justify-content: center;
 }
 .oyster {
-  height: 90%;
+  height: 250px;
   width: auto;
 }
 
