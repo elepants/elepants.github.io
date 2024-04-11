@@ -99,59 +99,36 @@ body {
     }
     .homegrid-container {
      display: grid;
+      margin-left: 5%;
+      margin-right: 5%;
         grid-template-columns: 1fr;
-        grid-template-rows: 60px 350px 200px 175px 350px 200px 10px;
+        grid-template-rows: 60px 125px 500px 200px;
         grid-template-areas:
             "header"
-            "intro"
-            "content1"
-            "content2"
-            "content3"
-            "content4"
+            "gif"
+            "content"
             "footer";
     }
-      .homeheader, .homecontent1, .homegif1, .catlook, .homecontent3, .homecontent4, .homecontent5, .oyster {
+      .homeheader, .content1, .homegif1, .catlook, .oyster {
         grid-column: auto;
         grid-row: auto;
         display: flex;
         overflow: hidden;
       }
-        
+    .oyster, .catlook {
+      align-items: center;
+      height: 100px;
+      width: auto;
+      }
+    
         .homeheader {
           text-align: center;
           justify-content: center;
         }
       }
-    
   
-  }
 }
   /*END MOBILE FORMATTING*/
-/*MARQUIS*/
-.marquis1 {
-  grid-area: marquis;
-  font-family: 'blockgame';
-  font-size: 50px;
-  background-position: center;
-  border-radius: 25px 25px 25px 25px;
-  color: #ED7A5A;
-  text-align: center;
-  text-shadow: 2px 2px #012622;
-  outline: 3px 3px #012622;
-}
-  .marquis2 {
-    grid-area: marquis;
-    font-family: 'blockgame';
-    font-size: 50px;
-    background-position: center;
-    border-radius: 25px 25px 25px 25px;
-    color: #ED7A5A;
-    text-align: center;
-    text-shadow: 2px 2px #012622;
-    outline: 3px 3px #012622;
-  }
-  /*END MARQUIS*/
-
   
   /*HOME*/
   .homegrid-container {
@@ -160,65 +137,55 @@ body {
     overflow: auto;
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 80px 250px 150px 350px 500px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 80px 800px 250px;
     grid-template-areas:
-        "header  header  header"
-        "content content content2"
-        "content content content2"
-        "content content content5"
-        "footer  footer  footer"
-        "footer footer footer";
+        "header  header"
+        "content gif"
+        "footer  footer";
+    
   }
-  .homeheader {
-    display: grid;
+
+  .header {
+    display: flex;
     grid-area: header;
+    justify-content: center;
     text-align: center;
   }
-  .homecontent1 {
+
+  .content {
+    vertical-align: top;
     display: grid;
-    grid-area: content1;
+    grid-area: content;
     padding-top: auto;
     padding-bottom: auto;
-    overflow: hidden;
+    overflow: visible;
   }
-  .homegif1 {
-    grid-area: content2;
+
+  .homepic1 {
+    display: grid;
+    grid-area: gif;
     overflow: hidden;
-    display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
   }
-.catlook {
-  display: flex;
-  grid-area: content2;
-  align-items: center;
-  justify-content: center;
-  height: 90%;
-  width: auto;
-  border-radius: 10px;
-}
- 
-  .homecontent3 {
-    display: grid;
-    grid-area: content3;
-    overflow: hidden;
-  }
-  .homecontent4 {
-    display: grid;
-    grid-area: content4;
-    overflow: hidden;
-  }
-.homecontent5 {
-  display: flex;
+          .catlook {
+          height: 45%;
+          width: auto; 
+          border-radius: 10px;
+          
+          }
+
+.footer {
+  display: grid;
   grid-area: footer;
-  align-items: center;
+  align-items: bottom;
   justify-content: center;
 }
-.oyster {
-  height: 250px;
-  width: auto;
-}
+          .oyster {
+          height: 200px;
+          width: auto;
+          }
 
   /*GRIEVANCES*/
   .grievancesheader {
@@ -348,4 +315,28 @@ body {
  
   }
 
+/*MARQUIS*/
+.marquis1 {
+  grid-area: marquis;
+  font-family: 'blockgame';
+  font-size: 50px;
+  background-position: center;
+  border-radius: 25px 25px 25px 25px;
+  color: #ED7A5A;
+  text-align: center;
+  text-shadow: 2px 2px #012622;
+  outline: 3px 3px #012622;
+}
+  .marquis2 {
+    grid-area: marquis;
+    font-family: 'blockgame';
+    font-size: 50px;
+    background-position: center;
+    border-radius: 25px 25px 25px 25px;
+    color: #ED7A5A;
+    text-align: center;
+    text-shadow: 2px 2px #012622;
+    outline: 3px 3px #012622;
+  }
+  /*END MARQUIS*/
 
