@@ -23,6 +23,8 @@ body {
     src: url(thirdminecraftia.ttf);
   }
 
+
+  
   /*NAVBAR */
   ul {
     display: flex;
@@ -38,7 +40,6 @@ body {
   ul li {
     text-align: center;
     position: relative;
-    display: inline-block;
   }
 
   li a {
@@ -132,16 +133,21 @@ body {
   
   /*HOME*/
   .homegrid-container {
+    max-width: 75% !important;
+    overflow-x: hidden !important;
     margin-left: 12.5%;
     margin-right: 12.5%;
     overflow: auto;
     display: grid;
     grid-gap: 5px;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 80px 800px 250px;
+    grid-template-rows: 80px 500px 150px 80px 300px 200px;
     grid-template-areas:
         "header  header"
         "content gif"
+        "pics pics"
+      "musichead musichead"
+      "listen listen"
         "footer  footer";
     
   }
@@ -162,18 +168,91 @@ body {
     overflow: visible;
   }
 
-  .homepic1 {
-    display: grid;
+  .pics {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     grid-area: gif;
     overflow: hidden;
-    align-items: top;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: space-around;
+    
+    
   }
           .catlook {
-          height: 45%;
-          width: auto; 
+          justify-content: right;
+          animation: fadeInAnimation ease 1s;
+          animation-timing-function: ease-in-out; 
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+          padding: 5px;
+          height: 200px;
+          width: 150px; 
           border-radius: 10px;
-          
+          }
+.me {
+  animation: fadeInAnimation ease 1s;
+  animation-timing-function: ease-in-out; 
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  height: 200px;
+  width: 200px;
+  justify-content: right;
+  }
+
+.pics2 {
+  grid-area: pics;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: center;
+  animation: fadeInAnimation ease 2s;
+  animation-timing-function: ease-in-out; 
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.musichead {
+  grid-area: musichead;
+  justify-content: center;
+  text-align: center;
+}
+.listen {
+  grid-area: listen;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: center;
+    animation: fadeInAnimation ease 5s;
+    animation-timing-function: ease-in-out; 
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  overflow: hidden;
+  }
+
+@keyframes fadeInAnimation {
+  0% {opacity: 0;}
+  90% { opacity: 0; }
+  100% { opacity: 1; }
+}
+  
+          .buffer, .song {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            vertical-align: center;
+            align-content: center;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            animation: fadeInAnimation ease 2s;
+            animation-timing-function: ease-in-out; 
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            
           }
 
 .footer {
@@ -182,10 +261,7 @@ body {
   align-items: bottom;
   justify-content: center;
 }
-          .oyster {
-          height: 200px;
-          width: auto;
-          }
+        
 
   /*GRIEVANCES*/
   .grievancesheader {
