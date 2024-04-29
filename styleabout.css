@@ -8,8 +8,12 @@ body {
   background-size: cover;
 
   @font-face {
+    font-family: antipasto;
+    src: url(antipasto.ttf)
+  }
+  @font-face {
     font-family: 'decoderfont';
-    src: url(decoder.ttf);
+    src: url(decoder.ttf);;
   }
 
   @font-face {
@@ -85,7 +89,7 @@ body {
     -webkit-transform: scale(-1, -1);
     transform: scale(-1, 1);
   }
-  .me {
+  .sball {
     z-index: 2;
   }
 

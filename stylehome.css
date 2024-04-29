@@ -94,35 +94,38 @@ body {
       background-size: cover;
       }
     
-  
-    .oyster, .catlook {
-      object-fit: scale-down;
-    }
     .homegrid-container {
-     display: grid;
+      display: grid;
       margin-left: 5%;
       margin-right: 5%;
         grid-template-columns: 1fr;
-        grid-template-rows: 60px 125px 500px 200px;
+        grid-template-rows: 80px 300px 500px 300px 200px 200px;
         grid-template-areas:
             "header"
-            "gif"
+            "pics"
             "content"
+            "pics2"
+            "listen"
             "footer";
     }
-      .homeheader, .content1, .homegif1, .catlook, .oyster {
+    
+      .header, .content, .pics, .pics2, .musichead, .listen, .catlook, .oyster {
         grid-column: auto;
         grid-row: auto;
         display: flex;
         overflow: hidden;
       }
+
+    .pics2, .pics {
+      display: hidden;
+    }
     .oyster, .catlook {
       align-items: center;
       height: 100px;
       width: auto;
       }
     
-        .homeheader {
+        .header {
           text-align: center;
           justify-content: center;
         }
@@ -144,8 +147,8 @@ body {
     grid-template-rows: 80px 500px 150px 80px 300px 200px;
     grid-template-areas:
         "header  header"
-        "content gif"
-        "pics pics"
+        "content pics"
+        "pics2 pics2"
       "musichead musichead"
       "listen listen"
         "footer  footer";
@@ -153,11 +156,17 @@ body {
   }
 
   .header {
+    line-height: 80px;
+    font-size: 30px;
     display: flex;
     grid-area: header;
     justify-content: center;
+    vertical-align: center;
     text-align: center;
   }
+.razor {
+ width: 100%; 
+}
 
   .content {
     vertical-align: top;
@@ -172,7 +181,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    grid-area: gif;
+    grid-area: pics;
     overflow: hidden;
     justify-content: space-around;
     align-items: flex-end;
@@ -202,7 +211,7 @@ body {
   }
 
 .pics2 {
-  grid-area: pics;
+  grid-area: pics2;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
