@@ -99,17 +99,18 @@ body {
       margin-left: 5%;
       margin-right: 5%;
         grid-template-columns: 1fr;
-        grid-template-rows: 80px 300px 500px 300px 200px 200px;
+        grid-template-rows: 80px 300px 500px 300px 200px 200px 200px;
         grid-template-areas:
             "header"
             "pics"
             "content"
             "pics2"
             "listen"
+          "rn"
             "footer";
     }
     
-      .header, .content, .pics, .pics2, .musichead, .listen, .catlook, .oyster {
+      .header, .content, .pics, .pics2, .musichead, .listen, .catlook, .oyster, .rn, .listen {
         grid-column: auto;
         grid-row: auto;
         display: flex;
@@ -144,13 +145,14 @@ body {
     display: grid;
     grid-gap: 5px;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 80px 500px 150px 80px 300px 200px;
+    grid-template-rows: 80px 500px 150px 80px 300px 200px 300px;
     grid-template-areas:
         "header  header"
         "content pics"
         "pics2 pics2"
-      "musichead musichead"
-      "listen listen"
+        "musichead musichead"
+        "listen listen"
+        "rn rn"
         "footer  footer";
     
   }
@@ -240,6 +242,18 @@ body {
     animation-fill-mode: forwards;
   overflow: hidden;
   }
+
+.song {
+  font-family: 'blockgame';
+}
+
+.rn {
+  grid-area: rn;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 @keyframes fadeInAnimation {
   0% {opacity: 0;}

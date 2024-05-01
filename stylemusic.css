@@ -32,26 +32,30 @@ body {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-      }
+
     .musicgrid-container {
         grid-template-columns: 1fr;
-        grid-template-rows: 9fr;
-        grid-template-rows: 100px 150px 600px 600px 700px 600px 500px 500px 500px;
+        grid-template-rows: 100px 150px 600px 500px;
         grid-template-areas:
             "header"
             "intro"
             "musiclist"
-            "musiclist"
-            "musiclist2"
-            "musiclist2"
-            "musiclist3"
-            "musiclist3"
             "footer";
     }
-      .musicheader, .musicintro, .musiclist, .musiclist2, .musiclist3 {
+      .musicheader, .musicintro, .musiclist, .footer {
         grid-column: auto;
         grid-row: auto;
       }
+
+    .musiclist {
+      display: flex; }
+      .musiclist > .song {
+        grid-area: musiclist;
+        overflow: hidden;
+          flex: 1 1 100%; /*grow | shrink | basis */
+          height: 100px;
+      }
+    }
   }
   }
 /*MOBILE FORMATTING*/
@@ -122,20 +126,13 @@ body {
     padding: 25px;
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 120px 170px 150px 600px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 140px 600px 600px;
     grid-template-areas:
-      "header header header"
-      "intro intro intro"
-      "musiclist  musiclist2 musiclist3"
-      "musiclist musiclist2 musiclist3"
-      "footer footer footer";
-  }
-
-  @media only screen and (max-width: 768px) {
-      .history {
-         display: block;
-      }
+      "header"
+      "intro"
+      "musiclist"
+      "footer";
   }
 
   .musicheader {
@@ -162,6 +159,9 @@ body {
 
   .musiclist {
   grid-area: musiclist;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding-top: 5px;
     position: relative;
     padding-left: 5px;
@@ -169,30 +169,20 @@ body {
     font-size: 15px;
     text-align: center;
     color: #420C14;
+    justify-content: space-evenly;
+    align-content: center;
+    row-gap: 20px;
   }
 
-  .musiclist2 {
-  grid-area: musiclist2;
-    padding-top: 5px;
-    position: relative;
-    padding-left: 5px;
-    font-family: 'blockgame';
-    font-size: 15px;
-    text-align: center;
-    color: #420C14;
-  }
+.musiclist > .song {
+  grid-area: musiclist;
+  overflow: hidden;
+    flex: 1 1 30%; /*grow | shrink | basis */
+    height: 100px;
+}
 
-  .musiclist3 {
-    grid-area: musiclist3;
-    padding-top: 5px;
-    position: relative;
-    padding-left: 5px;
-    font-family: 'blockgame';
-    font-size: 15px;
-    text-align: center;
-    color: #420C14;
-  }
 
+ 
 .tryjummbus {
 grid-area: tryjummbus;
   position: relative;
