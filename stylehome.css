@@ -145,11 +145,12 @@ body {
     display: grid;
     grid-gap: 5px;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 80px 500px 150px 80px 300px 200px 300px;
+    grid-template-rows: 80px 500px 150px 300px 80px 300px 200px 300px;
     grid-template-areas:
         "header  header"
         "content pics"
         "pics2 pics2"
+      "warning warning"
         "musichead musichead"
         "listen listen"
         "rn rn"
@@ -223,6 +224,13 @@ body {
   animation-timing-function: ease-in-out; 
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+
+.warning {
+  display: flex;
+  grid-area: warning;
+  justify-content: center;
+  object-position: center;
 }
 .musichead {
   grid-area: musichead;
