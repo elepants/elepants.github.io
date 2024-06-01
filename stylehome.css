@@ -244,7 +244,7 @@ body {
     flex-wrap: nowrap;
     gap: 20px;
     justify-content: center;
-    animation: fadeInAnimation ease 5s;
+    animation: fadeInAnimation ease 2s;
     animation-timing-function: ease-in-out; 
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
