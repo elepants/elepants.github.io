@@ -96,35 +96,65 @@ body {
     
     .homegrid-container {
       display: grid;
+      max-width: 100% !important;
       margin-left: 5%;
       margin-right: 5%;
         grid-template-columns: 1fr;
-        grid-template-rows: 80px 300px 500px 300px 200px 200px 200px;
+        grid-template-rows: 80px 250px 200px 500px 200px 600px 200px 80px;
         grid-template-areas:
             "header"
+            "warning"
             "pics"
             "content"
             "pics2"
             "listen"
-          "rn"
+            "rn"
             "footer";
+      overflow: hidden;
     }
-    
-      .header, .content, .pics, .pics2, .musichead, .listen, .catlook, .oyster, .rn, .listen {
+
+   
+      .header, .pics, .pics2, .musichead, .listen, .rn, {
         grid-column: auto;
         grid-row: auto;
-        display: flex;
+        display: grid;
         overflow: hidden;
       }
 
-    .pics2, .pics {
-      display: hidden;
+    .content {
+      grid-column: content;
+      grid-row: auto;
+      display: flex;
+      overflow-wrap: wrap;
     }
-    .oyster, .catlook {
-      align-items: center;
-      height: 100px;
-      width: auto;
+    .listen {
+      grid-column: auto;
+      grid-row: auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .pics2, .pics, .warning {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      object-position: center;
+      justify-content: center;
+    }
+    .oyster, .catlook, mepic {
+     display: grid;
+      grid-area: pics
       }
+    .warning { 
+      grid-area: warning;
+      max-width: 70%;
+      display: flex;
+      
+    }
+
+    
     
         .header {
           text-align: center;
