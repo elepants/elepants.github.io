@@ -1,11 +1,18 @@
-html,
+html {
+background: url('body.jpg') no-repeat center center scroll;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+width: 100%;
+}
 
-body {
-  height: 100%;
-  width: 100%;
-  background-image: url('body.jpg');
-  background-position: top;
-  background-size: cover;
+@media only screen and (max-width: 768px)  {
+html
+{
+    background:url('body.jpg') no-repeat center top scroll;
+   
+  max-width: 100%;
+}     }
 
   @font-face {
     font-family: antipasto;
@@ -58,7 +65,56 @@ body {
     color: #420C14;
   }
 /*END NAVBAR*/
+/*MOBILE FORMATTING!*/
 
+/*MOBILE FORMATTING*/
+
+@media screen and (max-width: 768px) {
+
+  .aboutgrid-container {
+    display: grid;
+    max-width: 100% !important;
+    margin-left: 5%;
+    margin-right: 5%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 200px 600px 125px;
+      grid-template-areas:
+          "content"
+          "pics"
+          "footer"
+         ;
+
+  }
+
+
+
+  .content {
+    display: grid;
+    grid-area: content;
+    
+  }
+
+  .pics {
+    display: grid;
+    grid-area: footer;
+    overflow: hidden;
+  }
+
+  .sball {
+    display: hidden;
+  }
+ 
+
+    .pics, .content, .header, .footer {
+      grid-column: auto;
+      grid-row: auto;
+    }
+  }
+
+@media screen and (min-width: 769px) {
+
+
+  /*mobile end*/
   
   .aboutgrid-container {
     margin-left: 12.5%;
@@ -101,4 +157,5 @@ body {
     color: #420C14;
     padding: 20px;
   }
+}
 

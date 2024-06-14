@@ -1,12 +1,20 @@
-html,
+html {
+background: url('body.jpg') no-repeat center center scroll;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+max-width: 100%;
+  
+}
 
-body {
-  height: 100%;
-  width: 100%;
-  background-image: url('body.jpg');
-  background-position: top;
-  background-size: cover;
-
+@media only screen and (orientation:portrait)
+    html
+    {
+        background:url('body.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+      max-width: 100%;
+    }    
   @font-face {
     font-family: decoderfont;
     src: url(decoder.ttf);
@@ -32,10 +40,16 @@ body {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-
+    }
+    
     .musicgrid-container {
+      display: grid;
+      overflow: hidden;
+      max-width: 100% !important;
+      margin-left: 5%;
+      margin-right: 5%;
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 150px 600px 500px;
+        grid-template-rows: 100px 75px 1950px 500px;
         grid-template-areas:
             "header"
             "intro"
@@ -46,19 +60,49 @@ body {
         grid-column: auto;
         grid-row: auto;
       }
+.musicheader {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  font-family: bitfont;
+  
+}
+.musicintro {
+  grid-area: intro;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+    
+.musiclist {
+  grid-area: musiclist;
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 
-    .musiclist {
-      display: flex; }
-      .musiclist > .song {
-        grid-area: musiclist;
-        overflow: hidden;
-          flex: 1 1 100%; /*grow | shrink | basis */
-          height: 100px;
-      }
-    }
+}
+    
+  .song {
+    font-family: bitfont;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
-  }
-/*MOBILE FORMATTING*/
+    
+.footer {
+  grid-area: footer;
+}
+    
+  }  
+
+/*MOBILE FORMATTING end*/
+
+
+
   /*NAVBAR */
   ul {
     display: flex;
@@ -116,7 +160,7 @@ body {
   }
 
   /*END HYPERLINKS*/
-
+ @media screen and (min-width: 769px) {
   .musicgrid-container {
     text-align: center;
      font-family: 'blockgame';
@@ -188,4 +232,4 @@ grid-area: tryjummbus;
   position: relative;
  text-align: center;
   max-width: 50%;
-}
+} }
