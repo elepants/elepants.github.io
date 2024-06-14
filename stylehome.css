@@ -1,12 +1,27 @@
-html,
+html {
+background: url('body.jpg') no-repeat center center scroll;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+width: 100%;
+}
 
-body {
+@media only screen and (orientation:portrait)
+    html
+    {
+        background:url('body.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+      max-width: 100%;
+    }       
+
+  
+  
+  body {
   color: #420C14;
   height: 100%;
   width: 100%;
-  background-image: url('body.jpg');
-  background-position: top;
-  background-size: cover;
+
 
   @font-face {
     font-family: decoderfont;
@@ -34,7 +49,6 @@ body {
     padding: 0;
     border-radius: 5px; 
     justify-content: center;
-
   }
 
   ul li {
@@ -79,20 +93,11 @@ body {
     color: #420C14;
     background-color: transparent;
     text-decoration: underline;
-  }
+  } 
 /*END HYPERLINKS*/
 /*MOBILE FORMATTING*/
 
   @media screen and (max-width: 768px) {
-    .body {
-      background-image: url('mobilebody.jpg');
-      background-repeat: no-repeat; 
-      -webkit-background-size: cover;
-      -webkit-background-repeat: no-repeat;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      }
     
     .homegrid-container {
       display: grid;
@@ -100,7 +105,7 @@ body {
       margin-left: 5%;
       margin-right: 5%;
         grid-template-columns: 1fr;
-        grid-template-rows: 80px 250px 200px 500px 200px 600px 200px 80px;
+        grid-template-rows: 80px 250px 200px 500px 200px 300px 100px;
         grid-template-areas:
             "header"
             "warning"
@@ -108,13 +113,12 @@ body {
             "content"
             "pics2"
             "listen"
-            "rn"
-            "footer";
+            "rn";
       overflow: hidden;
     }
 
    
-      .header, .pics, .pics2, .musichead, .listen, .rn, {
+      .header, .pics, .pics2, .listen, .rn, {
         grid-column: auto;
         grid-row: auto;
         display: grid;
@@ -128,12 +132,11 @@ body {
       overflow-wrap: wrap;
     }
     .listen {
-      grid-column: auto;
-      grid-row: auto;
+      grid-area: listen;
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
-      overflow: hidden;
+      overflow-x: scroll;
     }
 
     .pics2, .pics, .warning {
@@ -175,7 +178,7 @@ body {
     display: grid;
     grid-gap: 5px;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 80px 500px 150px 300px 80px 300px 200px 300px;
+    grid-template-rows: 80px 500px 150px 300px 80px 300px 200px 100px;
     grid-template-areas:
         "header  header"
         "content pics"
