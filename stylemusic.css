@@ -168,15 +168,8 @@ max-width: 100%;
     margin-left: 12.5%;
     margin-right: 12.5%;
     padding: 25px;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 140px 600px 600px;
-    grid-template-areas:
-      "header"
-      "intro"
-      "musiclist"
-      "footer";
+    display: flex;
+    flex-direction: column;
   }
 
   .musicheader {
@@ -203,28 +196,23 @@ max-width: 100%;
 
   .musiclist {
   grid-area: musiclist;
-    display: flex;
-    flex-direction: row;
+  display: inline-flex;
     flex-wrap: wrap;
-    padding-top: 5px;
-    position: relative;
-    padding-left: 5px;
-    font-family: 'blockgame';
-    font-size: 15px;
-    text-align: center;
-    color: #420C14;
-    justify-content: space-evenly;
-    align-content: center;
-    row-gap: 20px;
-  }
-
-.musiclist > .song {
-  grid-area: musiclist;
-  overflow: hidden;
-    flex: 1 1 30%; /*grow | shrink | basis */
-    height: 100px;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 2;
 }
 
+   .song {
+     display: flex;
+     align-content: space-around;
+
+    #play {
+      width: 200px;
+      
+    }
+  
+   }
 
  
 .tryjummbus {

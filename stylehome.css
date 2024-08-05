@@ -105,7 +105,7 @@ width: 100%;
       margin-left: 5%;
       margin-right: 5%;
         grid-template-columns: 1fr;
-        grid-template-rows: 80px 250px 200px 525px 80px 900px 100px;
+        grid-template-rows: 80px 250px 200px 600px 80px 900px 100px;
         grid-template-areas:
             "header"
             "warning"
@@ -164,8 +164,6 @@ width: 100%;
       
     }
 
-    
-    
         .header {
           text-align: center;
           justify-content: center;
@@ -182,20 +180,8 @@ width: 100%;
     margin-left: 12.5%;
     margin-right: 12.5%;
     overflow: auto;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 80px 500px 150px 300px 80px 300px 200px 100px;
-    grid-template-areas:
-        "header  header"
-        "content pics"
-        "pics2 pics2"
-      "warning warning"
-        "musichead musichead"
-        "listen listen"
-        "rn rn"
-        "footer  footer";
-    
+    display: flex;
+    flex-direction: column;
   }
 
   .header {
@@ -211,27 +197,22 @@ width: 100%;
  width: 100%; 
 }
 
-  .content {
-    vertical-align: top;
-    display: grid;
-    grid-area: content;
-    padding-top: auto;
-    padding-bottom: auto;
-    overflow: visible;
+  .contentparent {
+  display: flex;
+     
   }
+
+.content {
+  width: 70%;
+}
 
   .pics {
     display: flex;
+width: 30%; 
     flex-direction: column;
-    flex-wrap: wrap;
-    grid-area: pics;
-    overflow: hidden;
-    justify-content: space-around;
-    align-items: flex-end;
-    align-content: space-around;
-    
-    
+    justify-content: space-between;
   }
+
           .catlook {
           justify-content: right;
           animation: fadeInAnimation ease 1s;
@@ -259,11 +240,16 @@ width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 20px;
-  justify-content: center;
+  justify-content: space-between;
   animation: fadeInAnimation ease 2s;
   animation-timing-function: ease-in-out; 
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+
+.buffer {
+  border: 0;
+  padding: 0;
 }
 
 .warning {
