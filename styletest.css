@@ -1,0 +1,71 @@
+html {
+background: url('body.jpg') no-repeat center center scroll;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+width: 100%;
+}
+
+@media only screen and (orientation:portrait)
+    html
+    {
+        background:url('body.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+      max-width: 100%;
+    }       
+
+
+
+  body {
+  color: #420C14;
+  height: 100%;
+  width: 100%;
+
+
+  @font-face {
+    font-family: decoderfont;
+    src: url(decoder.ttf);
+  }
+
+  @font-face {
+    font-family: bitfont;
+    src: url(addsbp.ttf);
+  }
+
+  @font-face {
+ font-family: 'blockgame';
+    src: url(thirdminecraftia.ttf);
+  }
+
+
+
+  /*NAVBAR */
+  ul {
+    display: flex;
+    list-style-type: none;
+    color: #420C14;
+    margin: 0;  
+    padding: 0;
+    border-radius: 5px; 
+    justify-content: center;
+  }
+
+  ul li {
+    text-align: center;
+    position: relative;
+  }
+
+  li a {
+   display: block;
+    color: #420C14;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+  }
+  li a:hover {
+    background-color: #FDF0ED;
+    color: #420C14;
+  }
+/*END NAVBAR*/

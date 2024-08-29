@@ -210,7 +210,9 @@ width: 100%;
     display: flex;
 width: 30%; 
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    
   }
 
           .catlook {

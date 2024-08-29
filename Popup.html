@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+  @font-face {
+    font-family: bitfont;
+    src: url(addsbp.ttf);
+  }
+  @font-face {
+   font-family: 'blockgame';
+      src: url(thirdminecraftia.ttf);
+  }
+</style>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  
+  <meta charset="utf-8">
+
+  <title>popup test</title>
+  <link href="styletest.css" rel="stylesheet" type="text/css" />
+</head>
+
+  <nav>
+    <div class="navbar">
+      <ul>
+        <li> <a href="./home.html" style="font-family: bitfont;">home</a> </li>
+        <li> <a href="./about.html" style="font-family: bitfont;">about</a> </li>
+        <li> <a href="./music.html" style="font-family: bitfont;">music</a> </li>
+        </li></ul></div></nav>
+
+  <body>
+
+  <div data-role="page">
+    <div id="pageone" data-role="main" class="ui-content">
+      <a href="#myPopup" data-rel="popup" data-position-to="window">
+      <img src="anna.png" alt="Anna" style="width:200px;"></a>
+
+      <div data-role="popup" id="myPopup">
+        <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="anna.png" style="width:400px;" alt="Anna">
+      </div>
+    </div>
+  </div> 
+
+  </body>
+  </html>
