@@ -1,62 +1,78 @@
-<!DOCTYPE html>
-<html>
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>music</title>
+        <link rel="stylesheet" href="stylemusic.css">
+        
+    <style>
+        @font-face {
+          font-family: bitfont;
+          src: url(addsbp.ttf);
+        }
+          @font-face {
+         font-family: 'blockgame';
+            src: url(thirdminecraftia.ttf);
+        }
+    </style>
+     
 
-<style>
-  @font-face {
-    font-family: bitfont;
-    src: url(addsbp.ttf);
-  }
-  @font-face {
-   font-family: 'blockgame';
-      src: url(thirdminecraftia.ttf);
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    </head>
 
-<head>
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-      <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-      <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-  <meta charset="utf-8">
- 
-  <title>music</title>
-  <link href="stylemusic.css" rel="stylesheet" type="text/css" />
-</head>
-
-     <nav>
+        
+      <nav>
         <div class="navbar">
           <ul>
             <li> <a href="./home.html" style="font-family: bitfont;">home</a> </li>
             <li> <a href="./about.html" style="font-family: bitfont;">about</a> </li>
             <li> <a href="./music.html" style="font-family: bitfont;">music</a> </li>
-            </li></ul></div></nav> 
-  
+            </li></ul></div>
+      </nav> 
+
+
+
+        
 <body>
 
-    
-      <div id="pageone" data-role="main" class="ui-content">
-        <a href="#myPopup" data-rel="popup" data-position-to="window">
-        <img src="anna.png" alt="Anna" style="width:200px;"></a>
+      <img src="anna.png" id="img1" style="position: absolute; width: 200px; z-index: 1; margin-left: auto; margin-right: auto; left: 0; right: 0; top: 200px; text-align: center;"> 
+            <br>
+    <script>
+            var imgEl = document.getElementById("img1");
+            var isBig = false;
 
-        <div data-role="popup" id="myPopup">
-          <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a><img src="anna.png" style="width:400px;" alt="Anna">
-        </div>
-      </div>
-   
+            imgEl.addEventListener("click", function() {
+              if (isBig) {
+                imgEl.style.width = "200px";
+                imgEl.style.height = "auto";
+                imgEl.style.top = "200px";
+                isBig = false;
+              } else {
+                imgEl.style.width = "500px";
+                imgEl.style.height = "auto";
+                imgEl.style.top = "100px";
+                isBig = true;
+              }
+            })
+                </script>
     
 <div class="musicgrid-container">
-    <div class="musicheader">           
+    <div class="musicheader">   
     <h1>My music</h1> 
-    </div>
+
+            </div>
+          
+
   <div class="musicintro">
-        <p>This is my music archive. <br> <a href="http://tinyurl.com/2clobta5" target="_blank"><strong> try jummbus for yourself here!</strong> </a>
+      <br><br><br><br><br><br><br><br><br><br><p>This is my music archive. <br> <a href="http://tinyurl.com/2clobta5" target="_blank"><strong> try jummbus for yourself here!</strong> </a>
 </p>
   </div>
       
   
-  <div class="musiclist">
+<div class="musiclist">
 <br><br>
-   <div class="song"> <p> <a href="https://tinyurl.com/29cp3xnw" target="_blank"> <figure> <figcaption style="text-align: center;">               In Mind</figcaption> </a> </p> 
+    <div class="song"> <p> <a href="https://tinyurl.com/29cp3xnw" target="_blank"> <figure> <figcaption style="text-align: center;">               In Mind</figcaption> </a> </p> 
     <audio id="play" controls="controls1" style="border-radius: 10px;" src="In Mind.mp3" preload="none">
       <source src="In Mind.mp3" type="audio/mpeg">
       Your browser does not support the HTML5 Audio element.
@@ -83,95 +99,95 @@
           Your browser does not support the HTML5 Audio element.
         </audio>  </figure> <br></div>
     
-      <div class="song"><p style="color: #420C14;"> <figure> <figcaption style="text-align: center;">Figure 8-bit</figcaption> </p>
+    <div class="song"><p style="color: #420C14;"> <figure> <figcaption style="text-align: center;">Figure 8-bit</figcaption> </p>
         <audio id="play" controls="controls4" style="border-radius: 10px;"  src="Figure 8-bit.mp3" preload="none">
           <source src="Figure 8-bit.mp3" type="audio/mpeg">
           <source src="Figure-8-bit.ogg" type="audio/ogg">
           Your browser does not support the HTML5 Audio element.
         </audio> </figure>  <br></div>
       
-        <div class="song"><p> <a href="http://tinyurl.com/yow97oyg" target="_blank"> <figure> <figcaption style="text-align: center;">Deepslate</figcaption> </a> </p>
+    <div class="song"><p> <a href="http://tinyurl.com/yow97oyg" target="_blank"> <figure> <figcaption style="text-align: center;">Deepslate</figcaption> </a> </p>
         <audio id="play" controls="controls9" style="border-radius: 10px;" src="Deepslate.mp3" preload="none">
            <source src="Deepslate.mp3" type="audio/mpeg">
            <source src="far.ogg" type="audio/ogg">
            Your browser does not support the HTML5 Audio element.
-          </audio> </figure>  <br></div>
-                    
+          </audio> </figure>  <br></div>          
 
-          <div class="song"> <p> <a href="http://tinyurl.com/2dk8plst" target="_blank"> <figure> <figcaption style="text-align: center;">Arcos</figcaption> </a> </p>
+    <div class="song"> <p> <a href="http://tinyurl.com/2dk8plst" target="_blank"> <figure> <figcaption style="text-align: center;">Arcos</figcaption> </a> </p>
       <audio id="play" controls="controls1" style="border-radius: 10px;" src="Arcos.mp3" preload="none">
           <source src="Arcos.mp3" type="audio/mpeg">
           <source src="Arcos.ogg" type="audio/ogg">
           Your browser does not support the HTML5 Audio element.
       </audio></figure>   <br></div>
 
-            <div class="song"><p> <a href="http://tinyurl.com/23tup24j" target="_blank"> <figure> <figcaption style="text-align: center;">Hypno</figcaption> </a> </p>
+    <div class="song"><p> <a href="http://tinyurl.com/23tup24j" target="_blank"> <figure> <figcaption style="text-align: center;">Hypno</figcaption> </a> </p>
       <audio id="play" controls="controls6" style="border-radius: 10px;" src="hypno.mp3" preload="none">
           <source src="hypno.mp3" type="audio/mpeg">
           <source src="hypno ogg.ogg" type="audio/ogg">
           Your browser does not support the HTML5 Audio element.
       </audio> </figure>    <br></div>
 
-              <div class="song"><p> <a href="http://tinyurl.com/25dcvw2h" target="_blank"> <figure> <figcaption style="text-align: center;">Cascade</figcaption> </a> </p>
+    <div class="song"><p> <a href="http://tinyurl.com/25dcvw2h" target="_blank"> <figure> <figcaption style="text-align: center;">Cascade</figcaption> </a> </p>
       <audio id="play" controls="controls7" style="border-radius: 10px;" src="CASCADE.mp3" preload="none">
           <source src="CASCADE.mp3" type="audio/mpeg">
           <source src="cascade ogg.ogg" type="audio/ogg">
           Your browser does not support the HTML5 Audio element.
       </audio> </figure>  <br></div>
 
-                <div class="song"><p> <a href="http://tinyurl.com/28xzu558" target="_blank"><figure> <figcaption style="text-align: center;"> Kiwy</figcaption> </a></p>
+    <div class="song"><p> <a href="http://tinyurl.com/28xzu558" target="_blank"><figure> <figcaption style="text-align: center;"> Kiwy</figcaption> </a></p>
       <audio id="play" controls="controls8" style="border-radius: 10px;" src="kiwy.mp3" preload="none">
           <source src="kiwy.mp3" type="audio/mpeg">
           <source src="kiwy ogg.ogg" type="audio/ogg">
           Your browser does not support the HTML5 Audio element.
       </audio> </figure>  <br></div>
 
-                  <div class="song"><p><figure> <figcaption style="text-align: center;">Porky </figcaption></p>
+    <div class="song"><p><figure> <figcaption style="text-align: center;">Porky </figcaption></p>
     <audio id="play" controls="controls10" style="border-radius: 10px;" src="pork.mp3" preload="none">
         <source src="pork.mp3" type="audio/mpeg">
         <source src="pork.ogg" type="audio/ogg">
         Your browser does not support the HTML5 Audio element.
     </audio>  </figure> <br></div>
 
-                    <div class="song"><p><figure> <figcaption style="text-align: center;">Peach </figcaption></p>
+    <div class="song"><p><figure> <figcaption style="text-align: center;">Peach </figcaption></p>
     <audio id="play" controls="controls11" style="border-radius: 10px;" src="Peach.mp3" preload="none">
         <source src="Peach.mp3" type="audio/mpeg">
         <source src="Peach.ogg" type="audio/ogg">
         Your browser does not support the HTML5 Audio element.
     </audio> </figure>  <br></div>
 
-                      <div class="song"><p><figure> <figcaption style="text-align: center;">Bump</p>
+    <div class="song"><p><figure> <figcaption style="text-align: center;">Bump </figcaption> </p>
     <audio id="play" controls="controls12" style="border-radius: 10px;" src="Bump.mp3" preload="none">
         <source src="Bump.mp3" type="audio/mpeg">
         Your browser does not support the HTML5 Audio element.
     </audio> </figure>  <br></div>
 
-                        <div class="song"><p><figure> <figcaption style="text-align: center;">Clickbeat </figcaption></p>
+    <div class="song"><p><figure> <figcaption style="text-align: center;">Clickbeat </figcaption></p>
     <audio id="play" controls="controls13" style="border-radius: 10px;" src="click beat.mp3" preload="none">
         <source src="click beat.mp3" type="audio/mpeg">
         Your browser does not support the HTML5 Audio element.
     </audio> </figure>  <br></div>
 
-                          <div class="song"><p><figure> <figcaption style="text-align: center;">Walled </figcaption></p>
+    <div class="song"><p><figure> <figcaption style="text-align: center;">Walled </figcaption></p>
     <audio id="play" controls="controls14" style="border-radius: 10px;" src="Walled.mp3" preload="none">
         <source src="Walled.mp3" type="audio/mpeg">
         Your browser does not support the HTML5 Audio element.
     </audio> </figure>  <br></div>
 
-                            <div class="song"><p><figure> <figcaption style="text-align: center;">Maroon </figcaption></p>
+    <div class="song"><p><figure> <figcaption style="text-align: center;">Maroon </figcaption></p>
     <audio id="play" controls="controls15" style="border-radius: 10px;" src="maroon.mp3" preload="none">
         <source src="maroon.mp3" type="audio/mpeg">
         Your browser does not support the HTML5 Audio element.
     </audio> </figure>  <br></div>
-    </strong>
+   
+  </strong>
 
-                              <div class="song"><p> <a href="http://tinyurl.com/ytot8y6g" target="_blank"><figure> <figcaption style="text-align: center;">First </figcaption></p> </a>
+    <div class="song"> <p> <a href="http://tinyurl.com/ytot8y6g" target="_blank"><figure> <figcaption style="text-align: center;">First </figcaption> </a> </p> 
      <audio id="play" controls="controls11" style="border-radius: 10px;" src="First.mp3" preload="none">
         <source src="First.mp3" type="audio/mpeg">
         <source src="First.ogg" type="audio/ogg">
         Your browser does not support the HTML5 Audio element.
-     </audio></figure>   <br></div>
-  </div>
+     </audio> </figure>   <br></div>
+    
     <br>
     <br>
     <br>
@@ -187,8 +203,7 @@
     <br>
     <br>
        </div>
-  </div>
-
+ 
 </div>
 
 

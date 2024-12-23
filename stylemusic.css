@@ -1,36 +1,79 @@
 html {
 background: url('body.jpg') no-repeat center center scroll;
-  background-size: cover;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-max-width: 100%;
-  
-}
+width: 100%;
 
 @media only screen and (orientation:portrait)
     html
     {
-        background:url('body.jpg') no-repeat center center fixed;
+        background: url('body.jpg') no-repeat center center fixed;
         background-size: cover;
         height: 100%;
-      max-width: 100%;
-    }    
-  @font-face {
-    font-family: decoderfont;
-    src: url(decoder.ttf);
+        max-width: 100%;
+    }       }
+
+  body {
+  background-image: url('body.jpg') no-repeat center center scroll;
+  color: #420C14;
+  height: 100%;
+  width: 100%;
+
+
+  /*NAVBAR */
+  ul {
+    display: flex;
+    list-style-type: none;
+    color: #420C14;
+    margin: 0;  
+    padding: 0;
+    border-radius: 5px; 
+    justify-content: center;
   }
 
-  @font-face {
-    font-family: bitfont;
-    src: url(addsbp.ttf);
+  ul li {
+    text-align: center;
+    position: relative;
   }
 
-  @font-face {
- font-family: 'blockgame';
-    src: url(thirdminecraftia.ttf);
+  li a {
+   display: block;
+    color: #420C14;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+  }
+  li a:hover {
+    background-color: #FDF0ED;
+    color: #420C14;
+  }
+/*END NAVBAR*/
+
+/*HYPERLINKS*/
+  a:link {
+    color: #420C14;
+    background-color: transparent;
+    text-decoration: none;
   }
 
+  a:visited {
+    color: #420C14;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #D6EFFF;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: #420C14;
+    background-color: transparent;
+    text-decoration: underline;
+  } 
+/*END HYPERLINKS*/
+    
   /*MOBILE FORMATTING*/
   @media screen and (max-width: 768px) {
     .body {
@@ -50,7 +93,7 @@ max-width: 100%;
       margin-left: 5%;
       margin-right: 5%;
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 75px 1950px 500px;
+        grid-template-rows: 200px 75px 1950px 500px;
         grid-template-areas:
             "header"
             "intro"
@@ -62,9 +105,6 @@ max-width: 100%;
         grid-row: auto;
       }
 
-
-
-    
 .musicheader {
   grid-area: header;
   display: flex;
@@ -103,68 +143,9 @@ max-width: 100%;
 }
     
   }  
-
 /*MOBILE FORMATTING end*/
 
 
-
-  /*NAVBAR */
-  ul {
-    display: flex;
-    list-style-type: none;
-    color: #420C14;
-    margin: 0;  
-    padding: 0;
-    border-radius: 5px; 
-    justify-content: center;
-
-  }
-
-  ul li {
-    text-align: center;
-    position: relative;
-    display: inline-block;
-  }
-
-  li a {
-   display: block;
-    color: #420C14;
-    padding: 15px 15px;
-    text-decoration: none;
-    font-size: 17px;
-    border-radius: 5px;
-  }
-  li a:hover {
-    background-color: #FDF0ED;
-    color: #420C14;
-  }
-/*END NAVBAR*/
-/*HYPERLINKS*/
-  a:link {
-    color: #420C14;
-    background-color: transparent;
-    text-decoration: none;
-  }
-
-  a:visited {
-    color: #420C14;
-    background-color: transparent;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: #D6EFFF;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-
-  a:active {
-    color: #420C14;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-
-  /*END HYPERLINKS*/
  @media screen and (min-width: 769px) {
   .musicgrid-container {
     text-align: center;
@@ -205,7 +186,6 @@ max-width: 100%;
     flex-wrap: wrap;
     justify-content: center;
     overflow: hidden;
-    flex-shrink: 2;
 }
 
    .song {
