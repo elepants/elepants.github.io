@@ -2,6 +2,7 @@
     <html>
     <head>
     <title>music</title>
+
         <link rel="stylesheet" href="stylemusic.css">
         
     <style>
@@ -13,6 +14,10 @@
          font-family: 'blockgame';
             src: url(thirdminecraftia.ttf);
         }
+         @font-face {
+            font-family: 'decoderfont';
+            src: url(decoder.ttf);;
+          }
     </style>
      
 
@@ -36,7 +41,7 @@
         
 <body>
 
-      <img src="anna.png" id="img1" style="position: absolute; width: 200px; z-index: 1; margin-left: auto; margin-right: auto; left: 0; right: 0; top: 200px; text-align: center;"> 
+      <img src="anna.png" id="img1" style="position: absolute; width: 200px; z-index: 1; margin-left: 10%; top: 200px; text-align: center;"> 
             <br>
     <script>
             var imgEl = document.getElementById("img1");
@@ -59,26 +64,27 @@
     
 <div class="musicgrid-container">
     <div class="musicheader">   
-    <h1>My music</h1> 
+        <marquee class="head" direction="left" width="30%" height="60px" style="padding-bottom: 15px; font-family: 'bitfont';" scrollamount="10"loop="infinite"><strong><h1> my music</h1></strong>
+        </marquee> 
 
             </div>
           
 
   <div class="musicintro">
-      <br><br><br><br><br><br><br><br><br><br><p>This is my music archive. <br> <a href="http://tinyurl.com/2clobta5" target="_blank"><strong> try jummbus for yourself here!</strong> </a>
+      <p>This is my music archive. I made these with Jummbus!!!<br>  <a href="http://tinyurl.com/2clobta5" target="_blank"><strong> → Try Jummbus for yourself here. ← </strong> </a>
 </p>
   </div>
       
-  
+    
 <div class="musiclist">
 <br><br>
-    <div class="song"> <p> <a href="https://tinyurl.com/29cp3xnw" target="_blank"> <figure> <figcaption style="text-align: center;">               In Mind</figcaption> </a> </p> 
+    <div class="song" > <p> <a href="https://tinyurl.com/29cp3xnw" target="_blank"> <figure> <figcaption style="text-align: center;">               In Mind</figcaption> </a> </p> 
     <audio id="play" controls="controls1" style="border-radius: 10px;" src="In Mind.mp3" preload="none">
       <source src="In Mind.mp3" type="audio/mpeg">
       Your browser does not support the HTML5 Audio element.
     </audio> </figure>  <br> </div>
     
-    <div class="song"><p> <a href="http://tinyurl.com/2c7oungw" target="_blank"> <figure> <figcaption style="text-align: center;">               Bolete Boogie </figcaption> </a> </p> 
+    <div class="song"><p> <a href="http://tinyurl.com/2c7oungw" target="_blank"> <figure> <figcaption style="text-align: center;">               Bolete Boogie</figcaption> </a> </p> 
         <audio id="play" controls="controls2" style="border-radius: 10px;" src="bolete boogie.mp3" preload="none">
           <source src="bolete boogie.mp3" type="audio/mpeg">
           <source src="bolete-boogie.ogg" type="audio/ogg">
@@ -178,8 +184,6 @@
         <source src="maroon.mp3" type="audio/mpeg">
         Your browser does not support the HTML5 Audio element.
     </audio> </figure>  <br></div>
-   
-  </strong>
 
     <div class="song"> <p> <a href="http://tinyurl.com/ytot8y6g" target="_blank"><figure> <figcaption style="text-align: center;">First </figcaption> </a> </p> 
      <audio id="play" controls="controls11" style="border-radius: 10px;" src="First.mp3" preload="none">
@@ -206,7 +210,7 @@
  
 </div>
 
-
+    
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 html {
 background: url('body.jpg') no-repeat center center scroll;
-width: 100%;
+max-width: 100%;
 
 @media only screen and (orientation:portrait)
     html
@@ -15,7 +15,7 @@ width: 100%;
   background-image: url('body.jpg') no-repeat center center scroll;
   color: #420C14;
   height: 100%;
-  width: 100%;
+  max-width: 100%;
 
 
   /*NAVBAR */
@@ -188,16 +188,7 @@ width: 100%;
     overflow: hidden;
 }
 
-   .song {
-     display: flex;
-     align-content: space-around;
-
-    #play {
-      width: 200px;
-      
-    }
-  
-   }
+   
 
  
 .tryjummbus {
