@@ -69,3 +69,29 @@ width: 100%;
     color: #420C14;
   }
 /*END NAVBAR*/
+
+/*HYPERLINKS*/
+  a:link {
+    color: #420C14;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #420C14;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #D6EFFF;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: #420C14;
+    background-color: transparent;
+    text-decoration: underline;
+  } 
+/*END HYPERLINKS*/

@@ -149,8 +149,8 @@ max-width: 100%;
  @media screen and (min-width: 769px) {
   .musicgrid-container {
     text-align: center;
-     font-family: 'blockgame';
-     color: #420C14;
+    font-family: 'blockgame';
+    color: #420C14;
     margin-left: 12.5%;
     margin-right: 12.5%;
     padding: 25px;

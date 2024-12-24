@@ -5,17 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>welcome</title>
 <link rel="stylesheet" href="./stylezero.css">
+
+  <style>
+    @font-face {
+      font-family: bitfont;
+      src: url(addsbp.ttf);
+    }
+      @font-face {
+     font-family: 'blockgame';
+        src: url(thirdminecraftia.ttf);
+    }
+  </style>
+
+  <style>
+      
+    .greetings {
+         
+          animation: float 2s ease-in-out infinite;
+      }
+
+      @keyframes float {
+          0% {
+              transform: translateY(0);
+          }
+      
+          50% {
+              transform: translateY(-20px);
+          }
+
+          100% {
+              transform: translateY(0);
+          }
+      }
+  </style>
 </head>
 
-
 <body>
-  <div class="greetings">
-    welcome to my secret lair
-  </div>
+  
+  <div class="greetflex-container">
+    
+    <div class="greetings"> welcome to my secret lair </div>
 
-    <div class="button">
-      <a href="home.html">go</a>
-    </div>
+    <div class="button"> <a href="home.html"style="vertical-align: center;">go</a> </div>
+
+  </div>  
 
 
 </body>

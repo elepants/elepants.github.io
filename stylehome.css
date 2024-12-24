@@ -3,7 +3,8 @@ background: url('body.jpg') no-repeat center center scroll;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
-width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 @media only screen and (orientation:portrait)
