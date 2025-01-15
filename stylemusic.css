@@ -79,10 +79,10 @@ max-width: 100%;
     .body {
       background-image: url('mobilebody.jpg');
       background-repeat: no-repeat; 
-        -webkit-background-size: cover;
+      -webkit-background-size: cover;
       -webkit-background-repeat: no-repeat;
-        -moz-background-size: cover;
-        -o-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
         background-size: cover;
     }
     

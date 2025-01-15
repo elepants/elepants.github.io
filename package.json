@@ -1,0 +1,11 @@
+{
+    "name": "elepants",
+    "version": "1.0.0",
+    "description": "My HTML and CSS project",
+    "scripts": {
+        "dev": "echo 'Starting live server...' && (sleep infinity)"
+    },
+    "devDependencies": {
+        "live-server": "^1.2.2"
+    }
+}
