@@ -132,8 +132,9 @@ body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Ch
  }
 
 .headerpic {
-  left: 7.5%;
   position: absolute;
+  left: 15px;
+  top: 0;
   border-radius: 10px;
   background-clip: border-box;
 
@@ -147,18 +148,18 @@ body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Ch
 }
 
 .headertext {
+  text-indent: 115px;
   height: 80px; /*format position of textbox*/
   width: 100%;
   font-family: 'bitfont';
   font-size: 20px;
-  background-color: #F1EBE2;  /*create outline box */
-  border-radius: 10px;
   line-height: 75px; /*center text within outine box*/  
   position: absolute; /*anchor outline box to bottom of div */
   bottom: 0;
-  text-indent: 8em;
+  background-color: #F1EBE2;  /*create outline box */
+  border-radius: 10px;
   box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-}
+    }
 
   .main-container {
     margin-top: 20px;
@@ -168,34 +169,37 @@ body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Ch
     flex-direction: row; /* horizontal stacking ltr */
     height: auto;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    
+    justify-content: center;
+    gap: 8px;
   }
 
     .stats {
     background-color: #F1EBE2;  /*create outline box */
     border-radius: 10px;
+    height: auto;
+    width: 20vw;
     padding: 20px;
-    width: 60vw;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     text-align: center;
     align-items: center;
     }
 
     .hello {
-    margin-left: 5px;
-    margin-right: 5px;
     background-color: #F1EBE2;  /*create outline box */
     border-radius: 10px;
     background-clip: padding-box;
     padding: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  
+    flex-shrink: 1;
+    height: auto;
+    width: 30vw
     }
 
     .ads {
       display: flex;
-      width: 30%; 
+      flex-shrink: 2;
+      height: auto;
+      width: 15vw;
       flex-direction: column;
       text-align: center;
       align-items: center;
@@ -206,22 +210,16 @@ body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Ch
       box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
 
-          .catlook {
+          .catlook, .pizzacat, .greencat {
           padding: 5px;
-          height: 200px;
-          width: 150px; 
+          height: auto;
+          width: 80%; 
           border-radius: 10px;
           }
 
-          .pizzacat {
-          padding: 5px;
-          height: 200px;
-          width: 150px; 
-          border-radius: 10px;
-          }
 
 .frog {
-  height: 15vh;
+  height: 5rem;
   width: auto;
   overflow-y: show;
   display: flex; 
@@ -260,12 +258,12 @@ justify-content: space-between;
     overflow-x: auto;
     gap: 20px;
     justify-content: start;
+
   }
 
 .song {
   font-family: 'blockgame';
 
-  
 }
 
 .rn {
@@ -336,20 +334,39 @@ justify-content: space-between;
         background-size: cover;
             }
 
+            .marquee {
+              width: 83%;
+              margin: auto;
+              display: flex;
+              justify-content: center;
+              vertical-align: center;
+              text-align: center;
+            }
+
             .header {
               margin: auto;
               width: 85%;
-              height: 20vh;
+              height: 100px;
               position: relative;
               border-radius: 10px;
              }
 
+            .headerpic {
+              position: absolute;
+              left: 15px; 
+              top: 0;
+              border-radius: 10px;
+              background-clip: border-box;
+            }
+
              .headertext {
-              text-indent: 28vh;
+              text-indent: 115px;
+              top: 15px;
              }
 
             .main-container {
-              margin-top: 20px;
+              position: relative;
+              margin-top: 15px;
               margin-left: 5%;
               margin-right: 5%;
               max-width: 100%;
@@ -399,6 +416,10 @@ justify-content: space-between;
                 padding: 10px;
                 box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
                 justify-content: center;
+              }
+
+              .frog {
+                height: 3rem;
               }
 
             }
