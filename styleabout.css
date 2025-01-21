@@ -187,14 +187,48 @@ background-clip: border-box;
 
 
   .social {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
     background-color: #F1EBE2;  /*create outline box */
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     width: 20%;
     height: auto;
-    padding: 5px;
-    
+    padding: 10px;
   }
+
+.id {
+  display: flex;
+  align-items: center;
+  height: auto;
+  padding-left: 10px;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 20px;
+  vertical-align: middle;
+  border-radius: 5px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.id-2 {
+  padding-left: 12px !important;
+}
+
+
+
+
+  .scan {
+    height: auto;
+    text-align: center;
+    justify-content: center;
+
+    img {
+      border-radius: 10px;
+    }
+  }
+  
 
   .main {
     background-color: #F1EBE2;  /*create outline box */
@@ -205,15 +239,30 @@ background-clip: border-box;
     padding: 15px;
   }  
 
-  .pics {
+  .image-hover {
     background-color: #F1EBE2;  /*create outline box */
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     width: 16.66666666666%;
-    height: auto;
+    height: 120px;
     padding: 8px;
+
+    background-image: url('picsfolder1.png'); /* Initial background image */
+    background-size: 60%; /* Cover the entire area of the element */
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out; /* Smooth transition */
+    background-clip: padding-box;
+
+    a {
+      text-decoration: none;
+    }
   }
 
+.image-hover:hover {
+    background-image: url('picsfolder2.png'); /* Change on hover */
+    background-size: 65%;
+}
 
 
   @media screen and (max-width: 768px) {
