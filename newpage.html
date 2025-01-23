@@ -58,7 +58,6 @@
       <img id="aboutme" src="aboutme.gif" alt="aboutme" width="auto" height="16%">
   </div>
 
-  <!--class="column1"-->
 
   <div class="column3">
   </div>
@@ -74,7 +73,26 @@
   </div>
 
 
+  <img src="anna.png" id="img1" style="position: absolute; width: 175px; z-index: 1; margin-left: 7.5%; top: 200px; text-align: center;"> 
+            <br>
+    <script>
+            var imgEl = document.getElementById("img1");
+            var isBig = false;
 
+            imgEl.addEventListener("click", function() {
+              if (isBig) {
+                imgEl.style.width = "175px";
+                imgEl.style.height = "auto";
+                imgEl.style.top = "200px";
+                isBig = false;
+              } else {
+                imgEl.style.width = "500px";
+                imgEl.style.height = "auto";
+                imgEl.style.top = "100px";
+                isBig = true;
+              }
+            })
+                </script>
 
 </body>
 

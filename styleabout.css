@@ -83,6 +83,30 @@ html
   }
 /*END NAVBAR*/
 
+/*HYPERLINKS*/
+a:link {
+  color: #420C14;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #420C14;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #420C14;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #420C14;
+  background-color: transparent;
+  text-decoration: none;
+}  /* END HYPERLINKS*/
 
 
 /*HEADING WITH BANNER */
@@ -343,3 +367,5 @@ background-clip: border-box;
             display: none;
 
       }
+    }
+  
