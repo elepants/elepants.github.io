@@ -1,0 +1,116 @@
+html {
+  background-color: black;
+  background-image: url("nesrynback.png");
+  background-size: 100% auto;
+  background-repeat: round;
+  max-width: 100%;
+  height: auto;
+  
+  /* hide page scrollbar */
+  html { scrollbar-width: none; } /* Firefox */
+  body { -ms-overflow-style: none; } /* IE and Edge */
+  body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Chrome */
+  /* end hide page scrollbar */
+
+  
+      html,body
+  {
+      margin: 0px;
+      padding: 0px;
+  }
+    
+    body {
+    color: #420C14;
+    height: auto;
+    width: 100%;
+  
+    @font-face {
+      font-family: decoderfont;
+      src: url(decoder.ttf);
+    }
+  
+    @font-face {
+      font-family: bitfont;
+      src: url(addsbp.ttf);
+    }
+  
+    @font-face {
+   font-family: 'blockgame';
+      src: url(thirdminecraftia.ttf);
+    }
+  
+  
+    }
+
+.everything {
+  height: 285vh;
+}
+
+.float {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  top: 37vh;
+  left: 18vw;
+  height: 10vh;
+  width: 34vw;
+  font-family: 'seasons';
+  font-size: 16vh;
+  color: white;
+}
+
+.cat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  object-position: center;
+  vertical-align: center;
+position: absolute;
+top: 210vh;
+left: 47vw;
+width: 15vw;
+height: 10vw;
+}
+
+.button {
+  background: transparent;
+  border: none !important;
+  font-size:0;
+  z-index: 2;
+  cursor: pointer;
+position: relative;
+height: 100%;
+width: 100%;
+}
+
+#myImage {
+  display: none;
+  position: absolute;
+  left: 5vw;
+  top: 2vh;
+  width: 40%;
+  height: auto;
+  animation: 1s fadeInUptwo forwards, 1s fadeOut forwards;
+  animation-delay: 0s, 3s;
+}
+
+.disc {
+  position: absolute;
+  top: 179vh;
+  left: 10vw;
+  height: 12vh;
+  width: 7vw;
+}
+
+.flowerpot {
+  position: absolute;
+  top: 220vh;
+  left: 32vw;
+  height: 25vh;
+  width: 8vw;
+}
+    }
+
+    

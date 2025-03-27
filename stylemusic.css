@@ -346,11 +346,21 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     .song {
       width: 100%;
       height: auto;
-      background-color: #F1EBE2; /*create outline box */
+      background-color: none;
       border-radius: 10px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
 
-      
+        #play, .control {
+          margin-left: 5%; 
+          margin-right: 5%;
+            height: 50px;
+            width: 90%;
+            overflow: hidden;
+            color: white;
+            -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+            -moz-user-select: none;    /* mozilla browsers */
+            -khtml-user-select: none;  /* webkit (konqueror) browsers */
+            -ms-user-select: none;     /* IE10+ */
         }
 
    /*MOBILE FORMATTING*/

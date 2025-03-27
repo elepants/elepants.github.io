@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>elepants</title>
+  
+<style type="text/css" media="screen">
+
+    @font-face {
+      font-family: 'seasons';
+      src: url(theseasons.ttf);
+    }
+
+    @font-face {
+      font-family: bitfont;
+      src: url(addsbp.ttf);
+    }
+      @font-face {
+     font-family: 'blockgame';
+        src: url(thirdminecraftia.ttf);
+    }
+
+  </style>
+  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styleexp.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <style>
+    @keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp forwards;
+}
+
+@keyframes fadeInUptwo {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.fadeInUptwo-animation {
+  animation: 1s fadeInUptwo forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1;}
+  100% { opacity: 0;}
+}
+.fadeOut-animation {
+  animation: 0.5s fadeOut forwards;
+}
+  </style>
+
+<style>
+      
+  .float {
+       
+        animation: float 2s ease-in-out infinite;
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+    
+        50% {
+            transform: translateY(-20px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+</style>
+
+<script>
+function toggleImage() {
+  var image = document.getElementById("myImage");
+  if (image.style.display === "none") {
+    image.style.display = "block";
+  } else {
+    image.style.display = "none";
+  } }
+</script>
+
+
+</head>
+  <body>
+
+  <div class="everything">
+    <div class="float"> <div class="fadeInUp-animation">  nesryn </div> </div>
+
+    <a href="music.html">
+  <div class="disc"> </div> </a>
+
+    <a href="about.html">
+  <div class="flowerpot"></div></a>
+
+
+><div class="cat"> <button class="button" onclick="toggleImage()"> <img id="myImage" src="meow.png" style="display: none; z-index: 1;">
+</button> </div>
+
+
+
+  </div>
+
+
+
+</body>
+</html>
