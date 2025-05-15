@@ -1,10 +1,11 @@
 html {
   background-color: black;
   background-image: url("nesrynback.png");
-  background-size: 100% auto;
-  background-repeat: round;
-  max-width: 100%;
-  height: auto;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: auto;
+  max-width: 70%;
+  height: 100%;
   
   /* hide page scrollbar */
   html { scrollbar-width: none; } /* Firefox */
@@ -14,15 +15,13 @@ html {
 
   
       html,body
-  {
-      margin: 0px;
-      padding: 0px;
+  { 
+     margin: auto;
   }
     
     body {
     color: #420C14;
-    height: auto;
-    width: 100%;
+    margin: auto;
   
     @font-face {
       font-family: decoderfont;
@@ -42,9 +41,10 @@ html {
   
     }
 
-.everything {
-  height: 285vh;
-}
+    .everything {
+      margin: auto;
+      height: 100%;
+    }
 
 .float {
   position: absolute;
@@ -68,10 +68,10 @@ html {
   object-position: center;
   vertical-align: center;
 position: absolute;
-top: 210vh;
+top: 10vh;
 left: 47vw;
 width: 15vw;
-height: 10vw;
+height: 7vw;
 }
 
 .button {
@@ -89,7 +89,7 @@ width: 100%;
   display: none;
   position: absolute;
   left: 5vw;
-  top: 2vh;
+  top: 0vh;
   width: 40%;
   height: auto;
   animation: 1s fadeInUptwo forwards, 1s fadeOut forwards;
@@ -98,17 +98,17 @@ width: 100%;
 
 .disc {
   position: absolute;
-  top: 179vh;
-  left: 10vw;
-  height: 12vh;
+  top: 10vh;
+  left: 10.25vw;
+  height: 11vh;
   width: 7vw;
 }
 
 .flowerpot {
   position: absolute;
-  top: 220vh;
+  top: 10vh;
   left: 32vw;
-  height: 25vh;
+  height: 20vh;
   width: 8vw;
 }
     }

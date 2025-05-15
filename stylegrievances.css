@@ -1,0 +1,28 @@
+
+html {
+    background-image: url("picsgreencat.gif");
+    background-repeat: repeat;
+    background-position: center;
+      max-width: 100%;
+      overflow-x: hidden;
+      font-size: 25px;
+    }
+    
+    /* hide page scrollbar */
+    html { scrollbar-width: none; } /* Firefox */
+    body { -ms-overflow-style: none; } /* IE and Edge */
+    body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Chrome */
+    /* end hide page scrollbar */z
+
+
+.grievancesheader {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+  }
+
+  .grievancestext {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-align: center;
+    object-position: center;
+  }

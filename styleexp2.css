@@ -1,0 +1,80 @@
+html {
+    background-color: black;
+    background-image: url("page2.png");
+    background-repeat: round;
+    max-width: 100%;
+    height: auto;
+    overflow-y: auto;
+
+}
+    
+    /* hide page scrollbar */
+    html { scrollbar-width: none; } /* Firefox */
+    body { -ms-overflow-style: none; } /* IE and Edge */
+    body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Chrome */
+    /* end hide page scrollbar */
+  
+    
+        html,body
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+      
+      body {
+      color: #420C14;
+      height: auto;
+      width: 100%;
+    
+      @font-face {
+        font-family: decoderfont;
+        src: url(decoder.ttf);
+      }
+    
+      @font-face {
+        font-family: bitfont;
+        src: url(addsbp.ttf);
+      }
+    
+      @font-face {
+     font-family: 'blockgame';
+        src: url(thirdminecraftia.ttf);
+      }
+    
+
+    .everything {
+height: 1091px;
+      }
+
+      .framed {
+        position: absolute;
+        top: 37vh;
+        left: 32.5vw;
+      }
+ 
+
+.oyster {
+color: white;
+position: absolute;
+font-family: 'seasons';
+font-size: 5vh;
+top: 62vh;
+left: 30.5vw;
+height: 10vw;
+width: 27vw;
+      } 
+
+      .cat {
+        position: absolute;
+        top: 103vh;
+        left: 10vw;
+        height: 18vh;
+        width: 20vw;
+      }
+    
+    
+    
+    
+    
+    
+    
