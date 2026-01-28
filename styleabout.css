@@ -5,6 +5,7 @@ html {
   -o-background-size: cover;
     max-width: 100%;
     overflow-x: hidden;
+    height: 100%;
     overflow-y: hidden;
     font-size: 20px;
 }
@@ -302,15 +303,9 @@ body {
   .main2 {
     border-radius: 10px;
     width: 80%;
-    height: auto;
+    height: 60%;
     padding: 15px;
   }
-
-
-
-
-
-
 
   /*MOBILE FORMATTING */
   @media screen and (max-width: 768px) {

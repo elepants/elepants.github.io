@@ -1,7 +1,8 @@
 
 html {
-    background-image: url("picsgreencat.gif");
-    background-repeat: repeat;
+    background-image: url("picsbeach.gif");
+    background-size: fill;
+    background-repeat: none;
     background-position: center;
       max-width: 100%;
       overflow-x: hidden;

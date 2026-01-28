@@ -92,6 +92,21 @@ body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Ch
     }
   }
 
+  .dadsthumb {
+    position: absolute;
+    z-index: 0;
+    right: 27%;
+    top: 53%;
+    height: 75px;
+    width: auto;
+
+    img {
+      max-height: 100%;
+      max-width: 100%;
+      rotate: -90deg;
+    }
+  }
+
 
   .navcont {
     display: flex; 
